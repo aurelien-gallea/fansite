@@ -154,6 +154,7 @@ footer {
   display: flex;
   justify-content: space-between;
   
+  
 }
 
 #footer-nav {
@@ -241,6 +242,26 @@ input:focus {
     color: var(--bg-1);
     scale: 1.1;
 }
+
+/* Page index.html ----------------------------------------------------------------------------- ---------*/
+.banner-2-container {
+  display: flex;
+}
+.banner-container {
+  position: relative;
+  
+}
+#h1-index {
+  position: absolute;
+  top:50%;
+  left: 0;
+  width: 55%;
+  text-align: center;
+  color: var(--bg-1);
+}
+
+
+/* media queries --------------------------------------------------------------------------------- -------*/
 @media all and (max-width: 765px) {
   .menu-desktop {
     display: none;
@@ -258,6 +279,9 @@ input:focus {
     margin-left: 1rem ;
     height: 20px;
 }
+#h1-index {
+  font-size: 1.2em;
+}
 }
 
 @media all and (max-width:450px) {
@@ -267,5 +291,8 @@ input:focus {
     }
     #footer-nav {
         flex-direction: row;
+    }
+    #h1-index {
+      font-size: 0.8em;
     }
 }
