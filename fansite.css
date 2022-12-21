@@ -145,7 +145,7 @@ footer {
   padding: 0.3rem 0.3rem 1rem 0.3rem;
   font-size: 1.2em;
 }
-#footer-nav li {
+.footer-list-txt{
   margin-left: 1.5rem;
   font-size: 1.2em;
   font-weight: 300;
@@ -154,7 +154,17 @@ footer {
 #footer-nav li:hover {
   color: var(--bg-1);
 }
-
+.social-media li {
+    display: inline-block;
+}
+.social-media svg{
+    height: 30px;
+    margin-left: 1rem;
+}
+.social-media svg:hover {
+    color: var(--bg-1);
+    fill: currentColor;
+}
 #h2-footer {
   font-size: 1.8em;
   padding: 0.5rem;
@@ -189,6 +199,7 @@ input, select {
 }
 input:focus {
     background-color: var(--bg-2);
+    outline-color: var(--clr-1);
 }
 
 .btn {
@@ -225,6 +236,10 @@ input:focus {
   #footer-nav li {
     font-size: 1em;
   }
+  .social-media svg{
+    margin-left: 1rem ;
+    height: 20px;
+}
 }
 
 @media all and (max-width:450px) {
