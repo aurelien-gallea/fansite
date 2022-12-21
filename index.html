@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <nav id="flex-nav">
+      <nav id="flex-nav-header">
         <a href="index.html">
           <img
             id="logo"
@@ -18,7 +18,7 @@
             height="60"
           />
         </a>
-        <ul class="flex-ul">
+        <ul class="menu-desktop">
           <li><a href="#"> actu</a></li>
           <li><a href="#"> réalisations</a></li>
           <li><a href="#"> évenements</a></li>
@@ -46,5 +46,71 @@
         </div>
       </nav>
     </header>
+    <main>
+      <p>bonjour</p>
+    </main>
+    <footer>
+      <div id="container-footer">
+        <nav id="footer-nav">
+          <a href="index.html">
+            <img
+              id="logo"
+              src="./design/kisspng-final-fantasy-xiv-logo-text-ragnark-font-final-fantasy-xiv-5b3274691e5815.0754486715300332571243.png"
+              alt="logo final fantasy 14"
+              height="60"
+            />
+          </a>
+          <ul id="">
+            <li><a href="#"> actu</a></li>
+            <li><a href="#"> réalisations</a></li>
+            <li><a href="#"> évenements</a></li>
+            <li><a href="#"> contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="form-container-footer">
+        <h2 id="h2-footer">Demandez votre carte de membre</h2>
+        <h3 id="h3-footer">Inscription</h3>
+        <form id="form-footer">
+          <span
+            ><input
+              class="input-50"
+              type="text"
+              name="prenom"
+              id="prenom"
+              placeholder="Prénom"
+          /></span>
+          <span
+            ><input
+              class="input-50"
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Nom"
+          /></span>
+          <div>
+            <input
+              class="input-100"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+            />
+          </div>
+          <div>
+            <select class="input-100" name="age" id="age">
+              <option value="-10">j'ai moins de 10 ans</option>
+              <option value="-15">J'ai entre 10 et 15 ans</option>
+              <option value="-18" selected>J'ai entre 15 et 18 ans</option>
+              <option value="+18">J'ai plus de 18 ans</option>
+            </select>
+          </div>
+          <div>
+            <button class="btn btn-reset">Vider les champs</button>
+            <button class="btn btn-ok">Confirmer</button>
+          </div>
+        </form>
+      </div>
+    </footer>
   </body>
 </html>
