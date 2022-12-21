@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Alkalami&family=Merriweather:wght@300;400;700&family=Pacifico&family=Roboto:wght@100;300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&family=Courgette&family=Merriweather:wght@300;400;700&family=Pacifico&family=Roboto:wght@100;300;400;700&display=swap');
 :root {
   --bg-1: #f0f5f9;
   --bg-2: #c9d6df;
@@ -7,6 +7,7 @@
   --bg-5: #1e2022;
   --Merriweather: "Merriweather";
   --Roboto: "Roboto";
+  --courgette: "Courgette";
   --clr-1: #e8533b;
   --clr-1-05: #e47e6f;
   --clr-2: #5b7fc0;
@@ -19,9 +20,7 @@
   margin: 0;
   padding: 0;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 
 img,
 svg,
@@ -34,14 +33,28 @@ video {
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg-1);
-  font-family: var(--Roboto);
   display: flex;
   flex-direction: column;
+  
 }
+h1,h2,h3,h4,h5,h6,header{
+  font-family: var(--courgette), 'Times New Roman', Times, serif;
+}
+
+p,span,footer {
+  font-family: var(--Merriweather), Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 50px;
+}
+
 main {
   flex-grow: 1;
 }
@@ -99,8 +112,9 @@ header {
   align-self: center;
   display: none;
 }
-#menu-burger {
-  width: 40px;
+#menu-burger { /* le svg du menu */
+  width: 30px;
+  
   color: var(--bg-1);
   fill: currentColor;
 }
@@ -111,16 +125,19 @@ header {
   display: none;
   position: absolute;
   right: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
   border-radius: 0.3rem;
   color: var(--bg-5);
   background-color: #f1f1f1;
-  min-width: 160px;
+  min-width: 60px;
+  padding: 0.5rem;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 #burger-content li {
   padding: 0.5em;
+  border-radius: 0.3rem;
+  text-align: end;
 }
 #burger-content li:hover {
   background-color: var(--clr-2);
@@ -159,7 +176,7 @@ footer {
 }
 .social-media svg{
     height: 30px;
-    margin-left: 1rem;
+    margin: 0 0 1rem 1rem;
 }
 .social-media svg:hover {
     color: var(--bg-1);
