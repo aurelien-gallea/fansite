@@ -3,7 +3,7 @@
   --bg-1: #f0f5f9;
   --bg-2: #c9d6df;
   --bg-3: #52616b;
-  --bg-4: #52616b;
+  --bg-4: #20292e;
   --bg-5: #1e2022;
   --Merriweather: "Merriweather";
   --Roboto: "Roboto";
@@ -266,9 +266,9 @@ input:focus {
 }
 
 .role-container {
-  /* padding-bottom: 0.3rem; */
+  padding-bottom: 0.3rem;
   color: var(--bg-1);
-  margin-bottom: 0.1rem;
+  /* margin-bottom: 0.1rem; */
 }
 #tank-container {
   background-color: var(--clr-2);
@@ -284,6 +284,11 @@ input:focus {
   font-size: 1.5em;
   margin-left: 1rem;
 }
+.h4-dps {
+  font-size: 1.2em;
+  
+}
+
 .title-role {
   display: flex;
   align-items: center;
@@ -291,9 +296,17 @@ input:focus {
   padding: 1rem 0;
   background: var(--bg-5);
   width: 50%;
+  border-radius: 0 0 1em 0;
   
 }
-.title-role img {
+.title-dps {
+  gap: 1rem;
+  width: 100%;
+  margin-top: 3rem;
+  border-radius: 0;
+  background-color: var(--bg-4);
+}
+.icon-role {
   width:25px;
   
 }
@@ -301,10 +314,19 @@ input:focus {
   padding: 2rem;
   font-size: 1.1em;
 }
+.col-3 {
+  --m: 3; /* number of columns */
+}
 
+.col-4 {
+  --m: 4; /* number of columns */
+}
+.col-5 {
+  --m: 5; /* number of columns */
+}
 .gallery {
   --n: 1; /* number of rows*/
-  --m: 4; /* number of columns */
+  
   --g: 5px;  /* control the gap */
   --f: .8;   /* control the scale factor */
   
@@ -313,8 +335,9 @@ input:focus {
   width: 100vw;
   height: 30vh;
   grid-template-columns: repeat(var(--m),auto);
-  
 }
+
+
 
 .gallery > img {
   width: 0;

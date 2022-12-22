@@ -84,12 +84,12 @@
       <div id="tank-container" class="role-container">
         <div class="title-role">
           
-          <img src="./design/images/index/role-icons/TankRole.png" alt="icone de role de tank">
+          <img class="icon-role" src="./design/images/index/role-icons/TankRole.png" alt="icone de role de tank">
           <h3 class="h3-role">Les classes de tanks</h3>
         </div>
-          <p class="role-presentation">Avec leurs nombreux points de vie et une excellente défense, les tanks protégent leurs équipiers en concentrant l'inimitié des ennemis sur eux et en encaissant les coups.</p>
+          <p class="role-presentation">Avec leurs nombreux points de vie et une excellente défense, les <strong>tanks</strong> protégent leurs équipiers en concentrant l'inimitié des ennemis sur eux et en encaissant les coups.</p>
         <div id="container-swap-class">
-          <div class="gallery">
+          <div class="gallery col-4">
             <img src="./design/images/index/warrior.jpg" alt="le guerrier" />
             <img src="./design/images/index/drk.webp" alt="le chevalier noir" />
             <img src="./design/images/index/paladin.jpg" alt="le paladin" />
@@ -105,12 +105,12 @@
       <div id="healer-container" class="role-container">
         <div class="title-role">
           
-          <img src="./design/images/index/role-icons/HealerRole.png" alt="icone de role de healer">
+          <img class="icon-role" src="./design/images/index/role-icons/HealerRole.png" alt="icone de role de healer">
           <h3 class="h3-role">Les classes de soigneurs</h3>
         </div>
-          <p class="role-presentation">Grâce à leur magie curative, les soigneurs guérissent les blessures ou les altérations d'état de leurs équipiers et réduisent même les dégâts qu'ils subissent.</p>
+          <p class="role-presentation">Grâce à leur magie curative, les <strong>soigneurs</strong>  guérissent les blessures ou les altérations d'état de leurs équipiers et réduisent même les dégâts qu'ils subissent.</p>
         <div id="container-swap-class">
-          <div class="gallery">
+          <div class="gallery col-4">
             <img src="./design/images/index/whitemage.jpg" alt="le mage blanc" />
             <img src="./design/images/index/scholar.jpg" alt="l'érudit'" />
             <img src="./design/images/index/astro.jpg" alt="l'astromancien'" />
@@ -125,19 +125,54 @@
       <div id="dps-container" class="role-container">
         <div class="title-role">
           
-          <img src="./design/images/index/role-icons/DPSRole.png" alt="icone de role de dps">
+          <img class="icon-role" src="./design/images/index/role-icons/DPSRole.png" alt="icone de role de dps">
           <h3 class="h3-role">Les classes de dps</h3>
         </div>
-          <p class="role-presentation">Grâce à leur dégats physiques/magiques les <strong>DPS</strong> aident leur coéquipiers à terrasser rapidements les ennemis qui se trouveraient sur leurs chemins.</p>
-        <div id="container-swap-class">
-          <div class="gallery">
-            <img src="./design/images/index/warrior.jpg" alt="le guerrier" />
-            <img src="./design/images/index/drk.webp" alt="le chevalier noir" />
-            <img src="./design/images/index/paladin.jpg" alt="le paladin" />
+        <p class="role-presentation">Grâce à leur dégats physiques/magiques les <strong>DPS</strong> aident leur coéquipiers à terrasser rapidements les ennemis qui se trouveraient sur leurs chemins.</p>
+        <!-- les dps melee -->
+        <div class="title-role title-dps">
+          <img class="icon-role" src="./design/images/index/dps-types-icons/melee.png" alt="icone de dps de mêlée">
+          <h4 class="h4-dps">DPS de mêlée</h4>
+        </div>
+          <p class="role-presentation">Ces attaquants sont spécialisés dans le combat rapproché, utilisant des combinaisons de coups dans des positions précises pour infliger de grands dégâts aux ennemis.</p>
+          <div id="container-swap-class">
+          <div class="gallery col-5">
+            <img src="./design/images/index/monk.jpg" alt="le moine" />
+            <img src="./design/images/index/drg.webp" alt="le chevalier dragon" />
+            <img src="./design/images/index/ninja.webp" alt="le ninja" />
+            <img src="./design/images/index/sam.jpg" alt="le samourai" />
             <img
-              src="./design/images/index/gunbreaker.jpg"
-              alt="le pistosabreur"
+              src="./design/images/index/reaper.jpeg"
+              alt="le faucheur"
             />
+          </div>
+        </div>
+         
+         <!-- les DPS physiques à distance -->
+         <div class="title-role title-dps">
+          <img class="icon-role" src="./design/images/index/dps-types-icons/physicalranged.png" alt="icone de DPS physiques à distance">
+          <h4 class="h4-dps">DPS physiques à distance</h4>
+        </div>
+          <p class="role-presentation">Maniant des armes de tir, ces combattants sont particulièrement doués pour infliger des dégâts sur la durée et peuvent également apporter du soutien à leurs équipiers.</p>
+          <div id="container-swap-class">
+          <div class="gallery col-3">
+            <img src="./design/images/index/bard.jpg" alt="le barde" />
+            <img src="./design/images/index/machinist.jpg" alt="le machinist" />
+            <img src="./design/images/index/dancer.jpg" alt="le danseur" />
+            
+          </div>
+        </div>
+        <!-- les DPS magiques à distance -->
+         <div class="title-role title-dps">
+          <img class="icon-role" src="./design/images/index/dps-types-icons/caster.png" alt="icone de DPS magiques à distance">
+          <h4 class="h4-dps">DPS magiques à distance</h4>
+        </div>
+          <p class="role-presentation">Maîtrisant des sorts puissants, ces mages peuvent infliger en peu de temps d'immenses dégâts aux ennemis, mais sont limités dans leurs déplacements lors des incantations.</p>
+          <div id="container-swap-class">
+          <div class="gallery col-3">
+            <img src="./design/images/index/blackmage.jpg" alt="le mage noir" />
+            <img src="./design/images/index/summoner.jpg" alt="l'invocateur" />
+            <img src="./design/images/index/redmage.jpg" alt="le mage rouge" />
           </div>
         </div>
       </div>
@@ -149,6 +184,7 @@
         />
       </div>
     </main>
+    <!-- footer -->
     <footer>
       <nav id="footer-nav">
         <div id="container-footer">
