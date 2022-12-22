@@ -451,7 +451,8 @@ input:focus {
   }
   #footer-link-container {
     flex-direction: row;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    
   }
   #h1-index {
     font-size: 0.8em;
@@ -467,7 +468,11 @@ input:focus {
 
     margin: 0.5rem;
   }
-  #logo-media-footer {
-    flex-direction: column;
+  footer #logo {
+    height: 30px;
+
+  }
+  #footer-link-container {
+    font-size: 0.6em;
   }
 }
