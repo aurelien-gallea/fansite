@@ -10,7 +10,7 @@
   --courgette: "Courgette";
   --clr-1: #e8533b;
   --clr-1-05: #e47e6f;
-  --clr-2: #5b7fc0;
+  --clr-2: #2b4e8f;
 }
 
 *,
@@ -259,6 +259,48 @@ input:focus {
   text-align: center;
   color: var(--bg-1);
 }
+#h2-index {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 1.8em;
+}
+
+.role-container {
+  /* padding-bottom: 0.3rem; */
+  color: var(--bg-1);
+  margin-bottom: 0.1rem;
+}
+#tank-container {
+  background-color: var(--clr-2);
+
+}
+#healer-container {
+  background-color: #346624;
+}
+#dps-container {
+  background-color:#732828 ;
+}
+.h3-role {
+  font-size: 1.5em;
+  margin-left: 1rem;
+}
+.title-role {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 0;
+  background: var(--bg-5);
+  width: 50%;
+  
+}
+.title-role img {
+  width:25px;
+  
+}
+.role-presentation {
+  padding: 2rem;
+  font-size: 1.1em;
+}
 
 .gallery {
   --n: 1; /* number of rows*/
@@ -297,7 +339,6 @@ input:focus {
 
 #container-swap-class {
   margin: 0;
-  background: var(--clr-2);
   display: flex;
 }
 
@@ -323,6 +364,7 @@ input:focus {
 #h1-index {
   font-size: 1.2em;
 }
+
 }
 
 @media all and (max-width:450px) {
@@ -336,4 +378,7 @@ input:focus {
     #h1-index {
       font-size: 0.8em;
     }
+    .title-role img {
+  display: none;
+}
 }
