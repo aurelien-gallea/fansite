@@ -73,6 +73,8 @@ ul {
 header {
   background-color: var(--bg-5);
   color: var(--bg-1);
+
+  
 }
 #logo {
   margin: 0.5rem 0;
@@ -288,7 +290,9 @@ input:focus {
   font-size: 1.2em;
   
 }
-
+.m-top {
+  margin-top: 3rem;
+}
 .title-role {
   display: flex;
   align-items: center;
@@ -302,16 +306,23 @@ input:focus {
 .title-dps {
   gap: 1rem;
   width: 100%;
-  margin-top: 3rem;
   border-radius: 0;
   background-color: var(--bg-4);
+}
+.title-dps:nth-of-type(3) {
+  margin-top: 10rem;
 }
 .icon-role {
   width:25px;
   
 }
+.title-className {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
 .role-presentation {
-  padding: 2rem;
+  padding: 3rem;
   font-size: 1.1em;
 }
 .col-3 {
@@ -352,18 +363,38 @@ input:focus {
 }
 
 .gallery img:hover{
+
   filter: grayscale(0);
   width:  calc(25vh*var(--f)/var(--n));
   height: calc(50vw*var(--f)/var(--m));
+  
   /* width: 60vw; */
   /* height: 30vh; */
 }
-
+.gallery img:hover  .overlay-class{
+  display: block;
+}
 
 #container-swap-class {
   margin: 0;
   display: flex;
 }
+
+.overlay-class {
+  padding: 1rem;
+  width: 90%;
+  margin: 1rem auto;
+  color: var(--bg-1);
+  border: 1px solid var(--bg-1);
+  border-radius: 0.3rem;
+  /* display: none; */
+}
+.overlay-class h4 {
+  font-size: 1.4em;
+  margin-bottom: 0.8rem;
+}
+
+
 
 
 /* media queries --------------------------------------------------------------------------------- -------*/
