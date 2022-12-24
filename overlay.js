@@ -31,12 +31,15 @@ function eventHover(job,jobOverlay) {
 
    let mouve = document.querySelector(jobOverlay);
 
-    job.addEventListener('click', ()=> {
-        mouve.style.display = "block"; 
+    job.addEventListener('mouseover', ()=> {
+        mouve.style.display = "block";
+        mouve.classList.toggle("flip-2-hor-top-1");
+
     })
     job.addEventListener('mouseout', ()=> {
-        mouve.style.display = "none";
         
+        mouve.style.display = "none";
+        mouve.classList.toggle("flip-2-hor-top-1");
     })
 }
 // TANKS
